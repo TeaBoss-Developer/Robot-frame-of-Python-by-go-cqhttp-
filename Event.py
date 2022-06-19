@@ -30,7 +30,7 @@ def StartListening(sock,address,port):
                                 imgu = img[1].split("]")
                                 Api.send_group_msg(Gm.group_id,Texts.image(imgu[0]))
                             if("tcq:img" not in myg):
-                                Api.send_private_msg(Gm.group_id,info[2])
+                                Api.send_group_msg(Gm.group_id,info[2])
                     if(info[1] == "模糊"):
                         if(info[0] in Gm.msg):
                             Api.send_group_msg(Gm.group_id,info[2])
